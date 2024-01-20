@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/all.min.css' %}"> 
+
+    <link rel="stylesheet" href="{% static 'core/css/media-query.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+
+<body class="home-body">
+
+        <header class="header">
+                <div class="header_menu">
+                <!-- <hr>  Para agregar linea divisoria-->
+                    <div class="menu">
+
+                        <nav class="nav-home">
+                            <nav class="home_icon">
+                                <div class="logo-inicio">
+                                    <a href="{% url 'home' %}">
+                                    <img src="{% static 'core/img/HomeSitio.JPG' %} " width="270" height="45" alt="Logo-inicio"> 
+                                    </a>   
+                                </div>
+                            </nav> 
+                        </nav>
+
+                        <nav class = "nav-main">
+                            <div id="ctn_icon_search" class="icon_search">
+                                <i class="fa fa-search" aria-hidden="true" id="icon-search"></i>
+                            </div>
+
+                            <input type="checkbox" id="check">
+                            <label for="check" class="checkbtn">
+                                <i class="fas fa-bars"></i>
+                            </label>
+                            
+                            <ul class = "nav-menu-right" >
+                                <li class = "menu__item">
+                                    <a class = "menu__link" href="{% url 'home' %}">Inicio</a>
+                                    <a class = "menu__link" href="{% url 'perfil' %}">Perfil</a>
+                                    <a class = "menu__link" href="{% url 'logro' %}">Logros</a>
+                                    <a class = "menu__link" href="{% url 'contacto' %}">Contacto</a>
+                                </li>
+                            </ul>
+                        
+                        </nav>  
+                    </div>
+                   
+                    <div class="searchnav" id="ctn-bars-search">
+                        <input class="barrabusqueda" type="text" id="inputSearch" placeholder="Buscar..."> 
+                    </div>
+                    
+                        <ul id="box-search">
+                            <li><a href="c++.html"><i class="fa fa-search"></i>C++</a></li>
+                            <li><a href="csharp.html"><i class="fa fa-search"></i>CSharp</a></li>
+                            <li><a href="java.html"><i class="fa fa-search"></i>Java</a></li>
+                            <li><a href="javascript.html"><i class="fa fa-search"></i>JavaScript</a></li>
+                            <li><a href="python.html"><i class="fa fa-search"></i>Python</a></li>
+                            <li><a href="php.html"><i class="fa fa-search"></i>PHP</a></li>
+                        </ul>
+                    
+
+                    <div id="cover-ctn-search"> <!--Continuar desde aqui-->
+
+                    </div>
+
+                </div> 
+         </header>
+
+            {% block content %}
+            {% endblock %}
+         
+    <footer class="footerPie">
+            <div class="social-icons">
+                <h4>Sigueme en:</h4>
+                <a href="https://www.facebook.com/oscaly.rosariomateo/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UCXxztmcQjZXCMdqHOS9NZJw" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://twitter.com/oscaly_romat" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/oscalyromat/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/oscaly-rosario-69b9b8b9/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/sOcyalRM" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <p>Author: Oscaly Rosario</p>
+            <p><a href="mailto:hege@example.com">oscaly@example.com</a></p>
+            <p>©Todos los derechos reservados 2023</p>
+      </footer>
+      <script src="{% static 'core/js/menu.js' %}"></script>
+      <script src="{% static 'core/js/main.js' %}"></script>
+</body>
+
+</html>

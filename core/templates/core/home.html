@@ -1,0 +1,40 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+
+    {% block content %}
+    <main class="main-home">
+        <div class="div-descr">
+            <h1>Panorama general</h1>
+        </div>
+        
+        <section>
+            <div class="item-1">
+                <figure class="prof_figure">
+                <img src="{% static 'core/img/profile-pic.jpeg' %} " width="200" height="300" alt="perfil" data-animation = "show"> <!-- Investigar como hacer que esta imagen permanezca de su tamaño al alejar la pantalla-->
+                </figure>
+                <div>
+                    <p class="parrafo">
+                        A temprana edad empece a interesarme en las computadoras y<br/> la ciencia detras de su
+                        funcionamiento. Lo primero que hice con <br/>relacion a su uso fue aprender a manejar los
+                        paquetes de Office.<br/> Mas tarde aprendi a digitar por mi cuenta utilizando un programa<br/> 
+                        diseñado para auto enseñarse. Luego empece a interesar me por estudiar programacion.<br/>
+                        Soy estudiante de Licenciatura en Informatica en la Universidad Autonoma de Santo <br/>Domingo(UASD). 
+                        Programar a cambiado mucho mi vida. No solo por las aplicaciones.<br/> Aprender a crear codigos
+                        me ha dado habilidades para resolver problemas y una nueva<br/> forma de comunicarme con otros 
+                        a un nivel tecnico. Eventualmente podre tambien<br/> desarrollar sitios webs y usar mis habilidades
+                        de programar para conseguir<br/> un mejor trabajo.</strong> Delectus cupiditate ipsa ipsam atque?
+                        Deserunt autem suscipit impedit eos, magnam, consequuntur totam error et aliquam modi quisquam?
+                        Facilis iure neque perspiciatis?<br>
+                        Puedes saber mas sobre mi en mi <a class="btn-perfil" href="{% url 'perfil' %}">perfil.</a> </p> 
+                        <p class="parrafo">                          
+                       
+                </div>
+
+            </div>
+         
+        
+        </section>
+   
+    </main>
+    {% endblock %}

@@ -1,0 +1,314 @@
+@media (max-width:952px) 
+{
+
+    /*Adaptar el nav main para que sus elementos sean desplazados al achicar la pantalla */
+
+    .nav-main{
+        width: 750px;
+        margin-left: -250px;
+
+       /* float: left;*/
+    }
+  .nav-menu-right{
+    padding-left: 20px;
+  }
+  .menu__link {
+    font-size: 18px;
+  }
+
+  .main-home{
+    width: 100%;
+}
+
+.footerPie{
+    width: 100%;
+}
+
+
+}
+
+@media screen and (max-width: 1492px){
+
+    
+
+}
+
+@media screen and (max-width: 3200px){
+    
+}
+
+@media screen and (max-width: 858px){
+    
+
+    .icon_search{
+        position: fixed;
+        font-size: 30px;
+        margin: 5px 0 0 65%;
+    }
+    .checkbtn{
+        position: fixed;
+        display: block;
+        margin: 5px 0 0 70%;
+    }
+
+     .nav-menu-right{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -105%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .menu__item{
+        margin: 50px 0;
+        line-height: 30px;
+        float: left; /*Posiciona todo el conjunto li a la derecha*/
+    }
+
+    .menu__link{
+        font-size: 30px; /*Aumenta el tamaño a de los elementos a 30px*/
+        color: #f0f8ff;
+        display: block; /*Cambia la posicion de los elementos <a> a vertical*/
+        margin: 30px 0; /*separa verticalmente los elementos por 30 pixeles*/
+
+    }
+
+    .menu__link.active, .menu__link:hover{
+        background: none;
+        color: #e62b16;
+      }
+
+    #check:checked ~ .nav-menu-right {
+        left: -2%;
+    }
+
+    .header{
+        width: 100%;
+    }
+    .searchnav{
+        width: 100%;
+    }
+
+    .barrabusqueda,
+    #inputSearch {
+        width: 100%;
+        
+      }
+
+    .main-home{
+        width: 100%;
+    }
+
+    .footerPie{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 412px){
+    /*Experimentando */
+    body{
+       height: 300vh;
+        
+    }
+
+    .header{
+        width: 100%;
+        height: 54px
+    }
+
+    .header_menu{
+        width: 100%;
+    }
+
+    .menu{
+        width: 100%;
+    }
+
+    .nav-home{
+        width: 130px;
+    }
+
+    .home_icon{
+        width: 100%;
+    }
+
+    .nav-main{
+        width: 100%;
+    }
+    .icon_search{
+        position: fixed;
+        font-size: 20px;
+        margin: 5px 0 0 35%;
+    }
+
+    .checkbtn{
+        position: fixed;
+        width: 80px;
+        height: 60px;
+        font-size: 30px;
+    }
+   
+
+    .logo-inicio{
+        width: 120px;
+    }
+
+    .logo-inicio img{
+        width: 120px;
+        height: 36px;
+      }
+
+    .searchnav{
+        width: 100%;
+    }
+    .prof_figure{
+        width: 100%;
+        grid-row: 1;
+    }
+
+    .prof_figure img{
+        width: 40px;
+        height: 20px;
+    }
+
+    .main-home{
+        width: 100%;
+        margin-bottom: 880px;
+    }
+
+    .footerPie{
+        width: 100%;     
+    }
+
+    .social-icons{
+        font-size: 20px;
+        margin: 8px auto;
+    }
+
+    .item-1 {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+    }
+
+    .item-1 div{
+        grid-row: 2;
+    }
+
+
+}
+
+@media screen and (max-width: 678px){
+
+    body{
+        height: 100%;
+         
+     }
+ 
+     .header{
+         width: 100%;
+         height: 54px
+     }
+ 
+     .header_menu{
+         width: 100%;
+     }
+ 
+     .menu{
+         width: 100%;
+     }
+ 
+     .nav-home{
+         width: 130px;
+     }
+ 
+     .home_icon{
+         width: 100%;
+     }
+ 
+     .nav-main{
+         width: 100%;
+     }
+
+     .main-home{
+        height: 1200px;
+     }
+
+     .footerPie{
+        margin-top: 50%;
+     }
+
+}
+
+@media screen and (max-width: 606px){
+
+     .footerPie{
+        margin-top: 72%;
+     }
+
+}
+
+
+@media screen and (max-width: 564px){
+
+    body{
+        height: 260vh;
+         
+     }
+
+    .footerPie{
+       margin-top: 125%;
+    }
+
+}
+
+
+@media screen and (max-width: 730px){
+
+    .header{
+        width: 100%;
+    }
+
+    .header_menu{
+        width: 100%;
+    }
+
+    .menu{
+        width: 100%;
+    }
+
+    .icon_search{
+        position: fixed;
+        font-size: 20px;
+        margin: 5px 0 0 85%;
+    }
+
+    .checkbtn{
+        position: fixed;
+        width: 80px;
+        height: 60px;
+        font-size: 30px;
+        margin: 5px 0 0 87%;
+    }
+
+    .footerPie{
+        width: 100%;
+    }
+
+    .social-icons{
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+
+
+/*Alt +126 para Virgulilla*/

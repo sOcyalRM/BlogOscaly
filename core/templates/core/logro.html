@@ -1,0 +1,79 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+
+    {% block content %}
+    <main class="main_logros">
+        <h1>Algunos de mis logros importantes</h1>
+        <div class="k_logro">
+                <figure class="lg_figure">
+                    <img src="{% static 'core/img/kentucky.jpg' %}" alt="Kentucky" >
+                </figure>
+            <div class="k_descripcion">
+                <h2>Mi viaje a Kentucky</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas impedit atque 
+                    placeat aliquam provident officia ipsum ratione quos debitis vero, aspernatur
+                    temporibus eveniet dolor repellendus ullam, neque eos. Saepe, ex? Lorem,
+                    ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatem ipsa 
+                    explicabo, inventore nisi eveniet animi voluptate, consequuntur odit tenetur 
+                    voluptatum ab ullam dignissimos ducimus non reiciendis accusantium eum porro?</p> 
+            </div>
+        </div>
+
+        <div class="nc_logro">
+            <figure class="lg_figure">
+                <img src="{% static 'core/img/north_carolina.jpg' %}" alt="Carolina del Norte" >
+            </figure>
+
+            <div class="nc_descripcion">
+                <h2>Mi Viaje a Carolina del Norte</h2>
+                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas impedit atque 
+                    placeat aliquam provident officia ipsum ratione quos debitis vero, aspernatur
+                    temporibus eveniet dolor repellendus ullam, neque eos. Saepe, ex? Lorem,
+                    ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatem ipsa 
+                    explicabo, inventore nisi eveniet animi voluptate, consequuntur odit tenetur 
+                    voluptatum ab ullam dignissimos ducimus non reiciendis accusantium eum porro?</p> 
+            </div>
+        </div>
+
+        <div class="atl_logro">
+            <figure class="lg_figure">
+                <img src="{% static 'core/img/Atlanta_braves.jpg'%}" alt="Atlanta">
+            </figure>
+            <div class="atl_descripcion">
+                <h2>Mi viaje a Atlanta</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat blanditiis
+                     illo eveniet, alias perspiciatis repellendus! Deserunt, pariatur dolorem 
+                     modi deleniti quidem similique laboriosam. Esse, reiciendis! Explicabo 
+                     quis inventore odit atque! Lorem, ipsum dolor sit amet consectetur adipisicing 
+                     elit. Soluta voluptatem ipsa explicabo, inventore nisi eveniet animi voluptate, 
+                     consequuntur odit tenetur voluptatum ab ullam dignissimos ducimus non reiciendis
+                      accusantium eum porro?</p>
+            </div>
+        </div>
+
+        <div class="oc_logro">
+            <figure class="lg_figure">
+                <img src="{% static 'core/img/ocean_city.jpg' %}" alt="Ocean City">
+            </figure>
+            <div class="oc_descripcion">
+                <h2>Mi viaje a Ocean City</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat blanditiis
+                    illo eveniet, alias perspiciatis repellendus! Deserunt, pariatur dolorem 
+                    modi deleniti quidem similique laboriosam. Esse, reiciendis! Explicabo 
+                    quis inventore odit atque! Lorem, ipsum dolor sit amet consectetur adipisicing 
+                    elit. Soluta voluptatem ipsa explicabo, inventore nisi eveniet animi voluptate, 
+                    consequuntur odit tenetur voluptatum ab ullam dignissimos ducimus non reiciendis
+                     accusantium eum porro?</p>
+            </div>
+        </div>
+
+        <div>
+            <h3>
+                    Visita mi tienda
+            </h3>
+
+            <a href="tienda.html"> Mi tienda</a>
+        </div>
+    </main>
+    {% endblock %}

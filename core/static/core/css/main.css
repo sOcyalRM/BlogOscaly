@@ -1,0 +1,881 @@
+/*Roboto Slaf 400, 700
+  Roboto 400 500 700 900
+  Roboto Mono 400 500 700
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+  padding: 0;   /*Elimina espacios que estan por defecto*/
+  margin: 0;    
+  text-decoration: none;/*Para eliminar el subrayado*/
+  box-sizing: border-box;
+  list-style: none;     /*Elimina los puntos de todas las listas*/
+}
+
+
+
+body{
+  font-family: 'Roboto Mono', sans-serif;
+  font-family: 400;
+  overflow: scroll;
+  text-align: center;
+}
+
+.home-body{
+  position: relative;  /*Fixed, relative, static, sticky, abolute/ Para definir la imagen de fondo y desplazamiento en la pagina*/
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; 
+  width: 100%; /*1280px es el tamaño estandar de un sitio web. Puede ser incrementado hasta 1920px para monitores mas grandes*/
+  margin: 0 auto; /*Mantiene todo el contenido del body centrado*/
+  
+}
+
+/* ================================================================================================================================
+HEADER 
+Social*/
+
+.header{
+  width: 100%;
+  height: 62px;
+  background-color:  #e6e9ed;
+  /*border-bottom:solid 1px #110d0d; /*Para crear linea que separa elementos div*/
+  margin: 0 auto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease;
+  z-index: 15;
+}
+
+.header_menu{
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  height: 100px;
+  width: 1280px; /*1280px es el tamaño estandar de un sitio web. Puede ser incrementado hasta 1920px para monitores mas grandes*/
+  box-sizing: border-box;
+  margin: 0 auto; /*Mantiene todo el contenido del div centrado*/
+}
+
+
+.header.abajo{
+  background: #fff;
+  padding: 4px;
+  z-index: 11;
+}
+
+.header.abajo .menu__link:hover{
+  color: #007bff;
+  transition: 0.7s;
+  padding: 1px;
+}
+
+.menu{
+  width: 1280px;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-top: 6px;
+  margin: 6px auto;
+  z-index: 12;/*Investigar funcion, no se esta aplicando*/
+}
+
+.nav-home{
+  height: 75px;
+  grid-column: 1;
+  justify-content: left;
+  /*align-items: center;*/
+}
+
+.home_icon{
+  display: flex;
+  size-adjust: 100px;
+}
+
+.nav-main{
+  display: grid;
+  grid-column: 1fr 3fr;
+  justify-content: right;
+  width: 100%;
+  height: 30px;
+  grid-column: 2;
+  }
+
+  .nav-menu-right{
+    grid-column: 2;
+    display: inline-block; /*Hace que los elementos pasen de vertical a horizontal*/
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+
+/*hr{ 
+  border: 0;
+border-top: 2px solid #999; 
+border-bottom: 2px solid #333;
+height:0;
+
+} Para editar linea divisoria agregada en Html*/
+
+
+
+/*nav ul li{
+  display: inline-block;
+}*/
+
+
+
+.menu__item{
+  float: right; /*Envia los elementos del li hacia la derecha de la pantalla*/
+  position: relative;
+  list-style-type: none; /* Quita el marcador de un elemento li o ul*/
+
+
+}
+
+.menu__link{ /*Clase con la que manipulo los elementos a de menu__item*/
+  color: #0a0a0b;
+  font-size: 22px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin: 0 30px;
+  display: inline-block;
+  
+   /* Separa los elementos li por la cantidad de pixeles especificada*/
+}
+
+.menu__link.active, .menu__link:hover{
+  padding: 1px;
+  /*background: blue;*/
+  color: #007bff;;
+  transition: .5s;
+}
+
+
+.checkbtn{
+  font-size: 30px;
+  color: #7a7272;
+  float: right;
+  line-height: 20px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+.searchnav{
+  position: relative;
+  width: 100%;
+  height: 48px;
+  top: -120px;
+  font-size: 30px;
+  padding: 4px 2px;
+  margin: 0 68px auto 0;
+  background-color: #ffffff;
+  grid-row: 2;
+  z-index: 9;/*Investigar funcion y continuar desde aqui*/
+  /*transition: all .2s;*/
+  
+}
+
+.searchnav ul {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*.searchnav a{
+  color: #000000;
+}*/
+
+.barrabusqueda{
+  /*display: block;*/
+  font-size: 24px;
+  width: 720px;
+
+}
+
+#box-search{
+  position: fixed;
+  top: 112px;
+  left: 50%; /*Para desplazar hacia la izquierda*/
+  transform: translateX(-50%); /*Para desplazar a la derecha y centralizar*/
+  width: 1280px;
+  background: #fff;
+  z-index: 8;
+  display: none;
+}
+
+#box-search li a{
+  display: block;
+  width: 1200px;
+  color: #7a7272;
+  padding: 12px 20px;
+}
+
+#box-search li a:hover{
+  background: #f3f3f3;
+}
+
+#box-search li a i{
+  color: #7a7272;
+  margin-right: 10px;
+}
+
+/* Buscador de contenido*/
+
+.ctn_icon_search{
+  position: absolute;
+  right: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ctn_icon_search i{
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+#ctn_icon_search i:hover{
+  color: #0099ff;
+}
+
+.icon_search{
+  width: 18px;
+  height: auto;
+  margin-top: 5px;
+  grid-column: 1;
+  font-size: 25px;
+}
+
+
+#cover-ctn-search{
+  width: 100%;
+  height: 100%;
+  margin-top: 62px; /*Parte superior del header esta siendo cubierta, su z-index no se esta aplicando */
+  position: fixed;
+  left: 0;
+  background: #00000080;
+  z-index: 7;
+  display: none;
+}
+
+
+
+/* ================================================================================================================================
+Body*/
+
+.main-home{
+    display: grid;
+    width: 178vh; /*Area visible del navegador. Area permanece uniforme al hacer zoom out*/
+    height: 150vh;
+    /*grid-template-columns: 1fr 4fr 1fr;*/
+   /* grid-template-rows: 50% 50%;*/
+   /* background-image: url('../img/fondopara_sitio.JPG');
+    background-size: cover;*/
+    background-color:  #f7f9fb;
+    grid-template-rows: auto auto;
+    margin: 126px auto 60px auto; /*Orden de aplicacion de este margin: arriba, derecha, abajo, izquierda*/
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+
+[data-animation = "show"]{
+  opacity: 0;
+  transform: scale(0);
+  transition: .1s ease-in .01s;
+
+  --opacity: 1;
+  --transform: scale(1);
+}
+
+.unset {
+  opacity: var(--opacity);
+  transform: var(--transform);
+}
+
+.prof_figure{
+  padding-top: 60px ;
+  height: 20px;
+  grid-column: 1;
+}
+
+.prof_figure img{
+  object-fit:unset;
+}
+
+.prof_figure img.active, .prof_figure img:hover{
+  margin: 5px;
+}
+
+
+
+.div-descr{
+    display: grid;
+    grid-row: 1;
+    grid-column: 1;
+    justify-items: center;
+    height: 40px;
+    margin-top: 80px;
+   /* grid-template-columns: 50% 50% 50%;*/
+}
+
+.main-home section{
+  grid-row: 2;
+}
+
+.item-1{
+  display: grid; /*Para definir que habran rejillas*/
+  grid-template-columns: 1fr 3fr; /*Para cantidad de rejillas y tamaño por frames*/
+  margin-left: 10px;
+  /*position: absolute;*/
+  margin-bottom: 40px;
+
+}
+
+
+.parrafo {
+  justify-content: center;
+  text-align: justify;
+  padding: 40px;
+  font-size: 20px;
+  grid-column: 2;
+}
+
+
+.footerPie {
+  padding: 15px 5px 40px 5px;
+  background-color:  #e6e9ed;;
+  border-top:solid 1px #110d0d; /*Para crear linea en parte superior que separa elementos*/
+}
+
+.footerPie a{
+  color:#000000;
+}
+
+.social-icons{
+  display: flex;
+  width: 800px;
+  padding: 15px;
+  height: auto;
+  margin: 0 auto;
+  font-size: 32px;
+  justify-content: space-between;
+}
+
+
+.social-icons a.active, .social-icons a:hover{
+  color: #0099ff;
+  transition: .3s;
+  margin:  3px;
+  padding: 3px;
+}
+
+
+
+/*Para imagen en una seccion o toda la pagina web*/
+/*section{
+  background: url(fondo.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh - 80px); /*Para Restar el tamaño de la barra de inicio
+}*/
+
+
+
+/*================================================================================================================================
+PERFIL*/
+
+.perfil_main{
+  display: grid;
+  width: 1280px;
+  margin-top: 200px ;
+  background-color:  #f7f9fb;;
+  margin: 114px auto 60px auto; /*Orden de aplicacion de este margin: arriba, derecha, abajo, izquierda*/
+}
+
+
+.perfil_intro{
+  background-color:  #a7cff7;
+  padding: 10px 80px 50px; /*Los 10px se aplican para el top, los 80px para lados derecha izquierda, los 50px para abajo*/
+}
+
+.intro_content{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /*grid-row: 2fr;*/
+  
+}
+
+.intro_content h2{
+  padding: 15px;
+}
+
+.intro_content img{
+  grid-column: 1;
+  width: 90%;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.btn_mas{
+  /*border: 2px solid #010711d5;*/
+  /*border-radius: 30px; Continuar desde aqui. Separar boton */ 
+  border-bottom: 2px solid #000000;
+
+}
+
+.content_detail{
+  grid-column: 2;
+  width: 98%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  /*Continuar desde aqui y revisar bien. Estudiar cuidadosamente*/
+}
+
+.content_detail p{
+  text-align: justify;
+}
+
+.sec_conocimientos{
+  display: grid;
+  width: 1280px;
+  margin-top: 65px;
+  margin: 65px auto;
+}
+
+.sec_conocimientos p{
+  text-align: justify; /*Justifica todos los parrafos de esta seccion*/
+}
+
+/*.def_conocimientos{
+  padding: 10px 80px 50px;
+}*/ /*Este padding no puede ser aplicado a multiples elementos*/
+
+.leng_detalles{ /*Revisar cuidadosamente*/
+  display: inline-block;
+  padding: 10px 20px 45px;
+  max-width: 25%; /*Establece el tamaño de este segmento como un 25% del tamaño del elemento padre*/
+  margin-bottom: 30px;
+}
+.leng_detalles img{
+  width: 100%; /*Establece el tamaño de la imagen como el 100% del tamaño del elemento donde esta incluida*/
+  
+}
+
+ /*Probando span con inline*/
+.prueba{
+ color: #e7562efb;
+ 
+}
+
+/*================================================================================================================================
+C MAS MAS*/
+
+.cmm_main{
+  display: grid;
+  width: 172vh; /*Area visible del navegador. Area permanece uniforme al hacer zoom out*/
+  height: 80vh;
+  background-color:  #f7f9fb;
+  margin: 114px auto 60px auto; /*Orden de aplicacion de este margin: arriba, derecha, abajo, izquierda*/
+  /*margin: 65px auto;*/
+}
+
+.img_cmm{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 15px;
+}
+
+.img_cmm h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 5px auto 5px;
+}
+
+.img_cmm img{
+  margin: 5px;
+  width: 700px;
+  height: 300px;
+  grid-column: 1;
+}
+
+.img_cmm p{
+  text-align: justify;
+  grid-column: 2;
+}
+
+/*================================================================================================================================
+C SHARP
+*/
+.sharp_main{
+  width: 172vh; /*Area visible del navegador. Area permanece uniforme al hacer zoom out*/
+  height: 150vh;
+  background-color:  #f7f9fb;
+  margin: 100px auto 60px auto; /
+}
+
+.sharp_info{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 15px;
+}
+
+.sharp_info h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 5px auto 5px;
+}
+
+.sharp_info img{
+  margin: 5px;
+  width: 700px;
+  height: 300px;
+  grid-column: 1;
+}
+
+.sharp_info p{
+  text-align: justify;
+  grid-column: 2;
+}
+
+/*================================================================================================================================
+JAVA
+*/
+.java_main{
+  width: 172vh; /*Area visible del navegador. Area permanece uniforme al hacer zoom out*/
+  height: 150vh;
+  background-color:  #f7f9fb;
+  margin: 100px auto 60px auto; /
+}
+
+.java_info{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 15px;
+}
+
+.java_info h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 5px auto 5px;
+}
+
+.java_info img{
+  margin: 5px;
+  width: 700px;
+  height: 300px;
+  grid-column: 1;
+}
+
+.java_info p{
+  text-align: justify;
+  grid-column: 2;
+}
+
+/*================================================================================================================================
+JAVASCRIPT
+*/
+.js_main{
+  width: 172vh; /*Area visible del navegador. Area permanece uniforme al hacer zoom out*/
+  height: 150vh;
+  background-color:  #f7f9fb;
+  margin: 100px auto 60px auto; /
+}
+
+.js_info{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 15px;
+}
+
+.js_info h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 5px auto 5px;
+}
+
+.js_info img{
+  margin: 5px;
+  width: 700px;
+  height: 300px;
+  grid-column: 1;
+}
+
+.js_info p{
+  text-align: justify;
+  grid-column: 2;
+}
+
+/*================================================================================================================================
+PHP
+*/
+.php_main{
+  width: 172vh; /*Area visible del navegador. Area permanece uniforme al hacer zoom out*/
+  height: 150vh;
+  background-color:  #f7f9fb;
+  margin: 100px auto 60px auto; /
+}
+
+.php_info{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 15px;
+}
+
+.php_info h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 5px auto 5px;
+}
+
+.php_info img{
+  margin: 5px;
+  width: 700px;
+  height: 300px;
+  grid-column: 1;
+}
+
+.php_info p{
+  text-align: justify;
+  grid-column: 2;
+}
+
+
+/*================================================================================================================================
+PYTHON
+*/
+.python_main{
+  width: 172vh; /*Area visible del navegador. Area permanece uniforme al hacer zoom out*/
+  height: 150vh;
+  background-color:  #f7f9fb;
+  margin: 100px auto 60px auto; /
+}
+
+.python_info{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 15px;
+}
+
+.python_info h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 5px auto 5px;
+}
+
+.python_info img{
+  margin: 5px;
+  width: 700px;
+  height: 300px;
+  grid-column: 1;
+}
+
+.python_info p{
+  text-align: justify;
+  grid-column: 2;
+}
+
+/*================================================================================================================================
+LOGROS*/
+.main_logros{
+  width: 172vh; /*Area visible del navegador. Area permanece uniforme al hacer zoom out*/
+  height: 272vh;
+  margin: 114px auto 60px auto; /*Orden de aplicacion de este margin: arriba, derecha, abajo, izquierda*/
+  background-color:  #f7f9fb;
+}
+
+.main_logros h1{
+  padding: 20px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #edf5f9;
+}
+
+.main_logros p{/*Manejo todos los parrafos dentro de este main*/
+  text-align: justify;
+}
+
+.main_logros h2{
+  padding: 10px;
+}
+
+.main_logros div{
+  padding: 15px;
+}
+
+.k_logro{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.k_logro img{
+  height: 99%;
+  width: 95%;
+  grid-column: 1;
+}
+
+.k_descripcion{
+  grid-column: 2;
+}
+
+.nc_logro{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px;
+}
+
+.nc_logro img{
+  height: 99%;
+  width: 95%;
+  grid-column: 1;
+}
+
+.nc_descripcion{
+  grid-column: 2;
+}
+
+.atl_logro{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px;
+}
+
+.atl_logro img{
+  height: 99%;
+  width: 95%;
+  grid-column: 1;
+}
+
+.atl_descripcion{
+  grid-column: 2;
+}
+
+.oc_logro{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px;
+}
+
+.oc_logro img{
+  height: 99%;
+  width: 95%;
+  grid-column: 1;
+}
+
+.oc_descripcion{
+  grid-column: 2;
+}
+
+.lg_figure{
+  height: 390px;
+  width: 380px;
+}
+.lg_figure img.active, .lg_figure img:hover{
+  padding: 5px;
+  transition: .8s;
+}
+
+
+
+
+
+
+/*================================================================================================================================
+CONTACTO*/
+.main_contacto{
+  width: 1280px;
+  background-color:  #f7f9fb;
+  margin: 114px auto 60px auto; /*Orden de aplicacion de este margin: arriba, derecha, abajo, izquierda*/
+}
+
+.sec_contacto{
+  padding: 100px 200px;
+  font-style: italic;
+  font-size: larger;
+}
+
+.sec_contacto h1{
+  color:#3b0b0b;
+  margin-bottom: 50px;
+  font-size: 35px;
+}
+
+.bar_nombre{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 30px;
+
+}
+
+.bar_nombre h3{
+  grid: 1;
+}
+
+.bar_nombre input{
+  grid: 2;
+}
+
+.bar_email {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 30px;
+}
+
+.bar_email h3{
+  grid: 1;
+}
+
+.bar_email input{
+  grid: 2;
+}
+
+.bar_mensaje{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 30px;
+}
+
+.bar_mensaje h3{
+  grid: 1;
+}
+
+.bar_mensaje textarea{
+  grid: 2;
+  height: 120px;
+}
+
+.contn_enviar{
+  padding: 5px;
+  /*float:left;*/
+  left: 50%; /*Para desplazar hacia la izquierda*/
+
+}
+
+.btn_enviar{
+  font-size: 21px;
+  background-color: #a4d0e2;
+  border-radius: 13%;
+  width: 120px;
+  height: 42px;
+
+}
+
+/*================================================================================================================================*/
+
+/*Tienda */
+.m_tienda{
+  margin: 80px auto 50px auto;
+}
+
+/*
+  Continuar en hacer que la barra superior se quede fija mientras se hace scroll
+*/
+
+

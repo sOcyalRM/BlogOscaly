@@ -1,0 +1,45 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+
+    {% block content %}
+        <main class = "perfil_main">
+            <section class="perfil_intro">
+                <div class="intro_content">
+                    <h2>Mi vision general sobre ciencias computacionales</h2>
+                    <img src="{% static 'core/img/preview_ciencias_computacionales.jpg' %}" alt="img ciencias computacionales">
+                    <div class="content_detail">
+                        <p>
+                            Las ciencias computacionales son aquellas en las que se involucran los procesos de informacion y computacion.
+                            Estas estan contituidas por un gran conjunto de campos con los que se logrado la creacion
+                            de grandes plataformas, softwares de vital inportancia, constitucion de bases de datos, facilita la administracion 
+                            de redes de comunicacion, entre otros. 
+
+                            Las ciencias computacionales se conforman de varias ciencias donde converjen un sin numero de areas que hacen 
+                            de la carrera de computacion una de las mas complejas  de la actualidad.
+
+                            Como estudiante de ciencias computacionales debes tener presente que
+                          
+                        </p>
+                        <a class="btn_mas" href="index.html">Continuar leyendo...</a> <!-- Hacer un blog donde se amplie este definicion y agregar enlace por el provisional-->
+                    </div>
+                </div>
+                
+            </section>
+
+            <section class="sec_conocimientos">
+                <div class="def_conocimientos">
+                    <h3>Mis Experiencias de Estudio</h3>
+                {% for profile in profiles %}
+                    <div class="leng_detalles">
+                        <h4>{{ profile.title }}</h4>
+                        <img src="{{ profile.image.url }}" alt="Imagen c++">
+                        <p> {{ profile.description }}
+                        </p>
+                        <a class="btn_mas" href="c++.html">Continuar leyendo...</a>
+                    </div>
+                {% endfor %}
+            </section>
+
+        </main>
+       {% endblock %}
