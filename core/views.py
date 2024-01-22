@@ -5,9 +5,6 @@ from django.shortcuts import render
 def home(request):
     return render(request, 'core/home.html')
 
-def logro(request):
-    return render(request, 'core/logro.html')
-
 def contacto(request):
     return render(request, 'core/contacto.html')
 

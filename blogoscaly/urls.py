@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('core.urls')),
     path('', include('perfil.urls')),
+    path('', include('logro.urls')),
 ]
 
 if settings.DEBUG:

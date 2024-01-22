@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core',
     'perfil.apps.PerfilConfig',
+    'logro',
 ]
 
 MIDDLEWARE = [
