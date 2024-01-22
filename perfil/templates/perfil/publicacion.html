@@ -1,0 +1,15 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+
+    {% block content %}  
+    <main class="cmm_main">
+            <div class="img_cmm">
+                <h2>{{ profile.title }}</h2>
+                <img src="{{ profile.image.url }}" alt="Imagen de codigo" >
+                <p>{{ profile.content }}</p>
+            </div>
+
+            
+    </main>
+    {% endblock %}

@@ -14,5 +14,3 @@ def contacto(request):
 def tienda(request):
     return render(request, 'core/tienda.html')
 
-def publicacion(request):
-    return render(request, 'core/publicacion.html')

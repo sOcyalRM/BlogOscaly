@@ -58,12 +58,10 @@
                     </div>
                     
                         <ul id="box-search">
-                            <li><a href="c++.html"><i class="fa fa-search"></i>C++</a></li>
-                            <li><a href="csharp.html"><i class="fa fa-search"></i>CSharp</a></li>
-                            <li><a href="java.html"><i class="fa fa-search"></i>Java</a></li>
-                            <li><a href="javascript.html"><i class="fa fa-search"></i>JavaScript</a></li>
-                            <li><a href="python.html"><i class="fa fa-search"></i>Python</a></li>
-                            <li><a href="php.html"><i class="fa fa-search"></i>PHP</a></li>
+                            {% for profile in profiles %}
+                            <li><a href="/perfil/{{ profile.id }}"><i class="fa fa-search"></i>{{ profile.title }}</a></li> <!--Continuar agregando ids, probar iterar-->
+                            <!--Muestra la lista de todos los elementos por iteracion. Solo funciona en perfil porque models de app perfil no es global-->
+                            {% endfor %}
                         </ul>
                     
 

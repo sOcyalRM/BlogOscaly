@@ -23,6 +23,7 @@
                         </p>
                         <a class="btn_mas" href="index.html">Continuar leyendo...</a> <!-- Hacer un blog donde se amplie este definicion y agregar enlace por el provisional-->
                     </div>
+
                 </div>
                 
             </section>
@@ -36,7 +37,7 @@
                         <img src="{{ profile.image.url }}" alt="Imagen c++">
                         <p> {{ profile.description }}
                         </p>
-                        <a class="btn_mas" href="c++.html">Continuar leyendo...</a>
+                        <a class="btn_mas" href=" /perfil/{{profile.id }}" target= "_blank">Continuar leyendo...</a>  <!--No olvidar siempre poner carpeta entre dos barras: /carpeta/-->
                     </div>
                 {% endfor %}
             </section>

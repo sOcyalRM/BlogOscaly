@@ -7,5 +7,5 @@ def profile(request):
     return render (request, 'perfil/perfil.html', {'profiles':profiles})
 
 def publicacion(request, id):
-    post = Profile.objects.get(id=id)
-    return render (request, 'core/publicacion.html', {'post':post})
+    profile = Profile.objects.get(id=id)
+    return render (request, 'perfil/publicacion.html', {'profile':profile})
