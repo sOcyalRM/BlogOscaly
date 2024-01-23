@@ -7,6 +7,7 @@
         <section class="sec_contacto">
                 <h1>Contactame</h1>
             <form action='' method='POST'> <!--Inicio de form para manejar con mail-->
+                {% csrf_token %}
                 <div class="bar_nombre">
                 <h3>Nombre Completo</h3>
                     {{ form.name }}
