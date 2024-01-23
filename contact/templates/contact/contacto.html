@@ -1,0 +1,36 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+
+    {% block content %}
+    <main class="main_contacto">
+        <section class="sec_contacto">
+                <h1>Contactame</h1>
+            <form action='' method='POST'> <!--Inicio de form para manejar con mail-->
+                <div class="bar_nombre">
+                <h3>Nombre Completo</h3>
+                    {{ form.name }}
+            <!-- <input class="cont_nombrecompleto" id="l_nombre" placeholder="Ej.:Juan Ramirez" type="text"> -->
+                </div>
+                
+                <div class="bar_email">
+                <h3>Correo Electronico </h3>
+                    {{ form.mail }}
+            <!-- <input class="cont_email" id="c_electronico" placeholder="Ej.:jramirez@example.com" type="email">-->
+                </div>
+
+                <div class="bar_mensaje">
+                    <h3>Mensaje</h3>
+                    {{ form.content }}
+                    <!-- <textarea id="" placeholder="Maximo 300 caracteres..." id="l_texto" name="" rows="4" cols="50" maxlength="300" ></textarea> -->
+                    <!--maxlength limita el numero de caracteres que se reciben-->
+                </div>
+            <div class="contn_enviar">
+                <button class="btn_enviar">Enviar</button>
+            </div>
+            </form> <!-- Fin de form-->
+        </section>
+
+        
+    </main>
+    {% endblock %}

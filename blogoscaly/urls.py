@@ -23,6 +23,7 @@ urlpatterns = [
     path('', include('core.urls')),
     path('', include('perfil.urls')),
     path('', include('logro.urls')),
+    path('', include('contact.urls')),
 ]
 
 if settings.DEBUG:

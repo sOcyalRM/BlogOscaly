@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'core',
     'perfil.apps.PerfilConfig',
     'logro',
+    'contact',
 ]
 
 MIDDLEWARE = [
