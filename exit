@@ -1,0 +1,35 @@
+[33mcommit 857f4c74d1a80feadf90b72e584ba98dbc147924[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Oscaly <oscalyromat@icloud.com>
+Date:   Thu Jan 25 22:39:38 2024 -0400
+
+    Agregue algunas actualizaciones en templates html
+
+[33mcommit 78eed6f063cfa89244c37c13550c7c13d1a10e67[m
+Author: Oscaly <oscalyromat@icloud.com>
+Date:   Tue Jan 23 16:23:08 2024 -0400
+
+    Completion of contact form. Some changes required on frontend
+
+[33mcommit 2f15c41486e38073bd1db4b2ef0f616ae7191590[m
+Author: Oscaly <oscalyromat@icloud.com>
+Date:   Mon Jan 22 22:27:52 2024 -0400
+
+    Se agrego app contact y form. Form debe completarse
+
+[33mcommit fb513ea562f0316eaf2aaf0daac85cfdc14b5f43[m
+Author: Oscaly <oscalyromat@icloud.com>
+Date:   Mon Jan 22 15:41:49 2024 -0400
+
+    Created app Logro. Set its model and views
+
+[33mcommit 12037e5dcdc71e1875901ffd8db1c6e4fea9e4fe[m
+Author: Oscaly <oscalyromat@icloud.com>
+Date:   Mon Jan 22 11:54:38 2024 -0400
+
+    Configuracion de blog de publicaciones con id
+
+[33mcommit 374a7a9e1b7ce45a6cb437dc0f973da5617c144d[m
+Author: Oscaly <oscalyromat@icloud.com>
+Date:   Fri Jan 19 21:45:00 2024 -0400
+
+    Creacion de proyecto personal mi blog con la mayoria de apps

@@ -67,11 +67,13 @@ Social*/
   z-index: 11;
 }
 
-.header.abajo .menu__link:hover{
+/* Probando funcionamiento de CSS con esta parte*/
+
+/*.header.abajo .menu__link:hover{
   color: #007bff;
   transition: 0.7s;
   padding: 1px;
-}
+}*/
 
 .menu{
   width: 1280px;
@@ -691,7 +693,7 @@ LOGROS*/
 }
 
 .main_logros h1{
-  padding: 20px;
+  padding: 50px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background-color: #edf5f9;
 }
@@ -725,58 +727,17 @@ LOGROS*/
   grid-column: 2;
 }
 
-.nc_logro{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 15px;
-}
 
-.nc_logro img{
-  height: 99%;
-  width: 95%;
-  grid-column: 1;
-}
-
-.nc_descripcion{
-  grid-column: 2;
-}
-
-.atl_logro{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 15px;
-}
-
-.atl_logro img{
-  height: 99%;
-  width: 95%;
-  grid-column: 1;
-}
-
-.atl_descripcion{
-  grid-column: 2;
-}
-
-.oc_logro{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 15px;
-}
-
-.oc_logro img{
-  height: 99%;
-  width: 95%;
-  grid-column: 1;
-}
-
-.oc_descripcion{
-  grid-column: 2;
-}
 
 .lg_figure{
   height: 390px;
   width: 380px;
 }
+
+.lg_figure img{
+  margin: 10px;
+}
+
 .lg_figure img.active, .lg_figure img:hover{
   padding: 5px;
   transition: .8s;
