@@ -11,17 +11,16 @@
                     <div class="content_detail">
                         <p>
                             Las ciencias computacionales son aquellas en las que se involucran los procesos de informacion y computacion.
-                            Estas estan contituidas por un gran conjunto de campos con los que se logrado la creacion
-                            de grandes plataformas, softwares de vital inportancia, constitucion de bases de datos, facilita la administracion 
-                            de redes de comunicacion, entre otros. 
-
+                            Estas estan constituidas por un gran conjunto de campos con los que se logrado la creacion
+                            de grandes plataformas, aplicaciones de vital importancia, constitucion de bases de datos, facilita la administracion 
+                            de redes de comunicacion, entre otros. </br>
                             Las ciencias computacionales se conforman de varias ciencias donde converjen un sin numero de areas que hacen 
                             de la carrera de computacion una de las mas complejas  de la actualidad.
 
-                            Como estudiante de ciencias computacionales debes tener presente que
+                            A continuacion ofrezco una vista a mi perfil como estudiante de ciencias computacionales.
                           
                         </p>
-                        <a class="btn_mas" href="index.html">Continuar leyendo...</a> <!-- Hacer un blog donde se amplie este definicion y agregar enlace por el provisional-->
+                       <!-- <a class="btn_mas" href=" /perfil/{{ 3 }}" target= "_blank">Continuar leyendo...</a> --><!-- Hacer un blog donde se amplie este definicion y agregar enlace por el provisional-->
                     </div>
 
                 </div>
@@ -30,14 +29,15 @@
 
             <section class="sec_conocimientos">
                 <div class="def_conocimientos">
-                    <h3>Mis Experiencias de Estudio</h3>
+                    <h3>Mis Estudios y Experiencias</h3>
                 {% for profile in profiles %}
+
                     <div class="leng_detalles">
                         <h4>{{ profile.title }}</h4>
                         <img src="{{ profile.image.url }}" alt="Imagen c++">
-                        <p> {{ profile.description }}
-                        </p>
+                        {{ profile.description|safe }}
                         <a class="btn_mas" href=" /perfil/{{profile.id }}" target= "_blank">Continuar leyendo...</a>  <!--No olvidar siempre poner carpeta entre dos barras: /carpeta/-->
+
                     </div>
                 {% endfor %}
             </section>

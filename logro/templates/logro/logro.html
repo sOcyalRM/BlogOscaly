@@ -4,7 +4,7 @@
 
     {% block content %}
     <main class="main_logros">
-        <h1>Algunos de mis logros importantes</h1>
+        <h1>Algunos de mis logros personales </h1>
         {% for logro in logros %}
         <div class="k_logro">
                 <figure class="lg_figure">
@@ -12,7 +12,7 @@
                 </figure>
             <div class="k_descripcion">
                 <h2>{{ logro.title }}</h2>
-                <p>{{ logro.description }}</p> 
+                <p>{{ logro.description|safe }}</p> 
             </div>
         </div>
         {% endfor %}

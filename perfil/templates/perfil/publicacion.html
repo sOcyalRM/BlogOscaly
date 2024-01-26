@@ -7,7 +7,7 @@
             <div class="img_cmm">
                 <h2>{{ profile.title }}</h2>
                 <img src="{{ profile.image.url }}" alt="Imagen de codigo" >
-                <p>{{ profile.content }}</p>
+                {{ profile.content|safe }} <!--Revisar atributos de p en css-->
             </div>
 
             
