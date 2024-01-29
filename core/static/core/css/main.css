@@ -69,11 +69,11 @@ Social*/
 
 /* Probando funcionamiento de CSS con esta parte*/
 
-/*.header.abajo .menu__link:hover{
+.header.abajo .menu__link:hover{
   color: #007bff;
   transition: 0.7s;
   padding: 1px;
-}*/
+}
 
 .menu{
   width: 1280px;
@@ -291,8 +291,6 @@ Body*/
 }
 
 
-
-
 [data-animation = "show"]{
   opacity: 0;
   transform: scale(0);
@@ -321,8 +319,6 @@ Body*/
   margin: 5px;
 }
 
-
-
 .div-descr{
     display: grid;
     grid-row: 1;
@@ -345,7 +341,6 @@ Body*/
   margin-bottom: 40px;
 
 }
-
 
 .parrafo {
   justify-content: center;
@@ -473,6 +468,7 @@ PERFIL*/
 }
 .leng_detalles img{
   width: 100%; /*Establece el tamaño de la imagen como el 100% del tamaño del elemento donde esta incluida*/
+  height: 160px;
   
 }
 
@@ -482,220 +478,26 @@ PERFIL*/
  
 }
 
-/*================================================================================================================================
-C MAS MAS*/
 
-.cmm_main{
-  display: grid;
-  width: 172vh; /*Area visible del navegador. Area permanece uniforme al hacer zoom out*/
-  height: 80vh;
-  background-color:  #f7f9fb;
-  margin: 114px auto 60px auto; /*Orden de aplicacion de este margin: arriba, derecha, abajo, izquierda*/
-  /*margin: 65px auto;*/
-}
-
-.img_cmm{
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  padding: 15px;
-}
-
-.img_cmm h2{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  margin: 5px auto 5px;
-}
-
-.img_cmm img{
-  margin: 5px;
-  width: 700px;
-  height: 300px;
-  grid-column: 1;
-}
-
-.img_cmm p{
-  text-align: justify;
-  grid-column: 2;
-}
-
-/*================================================================================================================================
-C SHARP
-*/
-.sharp_main{
-  width: 172vh; /*Area visible del navegador. Area permanece uniforme al hacer zoom out*/
-  height: 150vh;
-  background-color:  #f7f9fb;
-  margin: 100px auto 60px auto; /
-}
-
-.sharp_info{
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  padding: 15px;
-}
-
-.sharp_info h2{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  margin: 5px auto 5px;
-}
-
-.sharp_info img{
-  margin: 5px;
-  width: 700px;
-  height: 300px;
-  grid-column: 1;
-}
-
-.sharp_info p{
-  text-align: justify;
-  grid-column: 2;
-}
-
-/*================================================================================================================================
-JAVA
-*/
-.java_main{
-  width: 172vh; /*Area visible del navegador. Area permanece uniforme al hacer zoom out*/
-  height: 150vh;
-  background-color:  #f7f9fb;
-  margin: 100px auto 60px auto; /
-}
-
-.java_info{
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  padding: 15px;
-}
-
-.java_info h2{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  margin: 5px auto 5px;
-}
-
-.java_info img{
-  margin: 5px;
-  width: 700px;
-  height: 300px;
-  grid-column: 1;
-}
-
-.java_info p{
-  text-align: justify;
-  grid-column: 2;
-}
-
-/*================================================================================================================================
-JAVASCRIPT
-*/
-.js_main{
-  width: 172vh; /*Area visible del navegador. Area permanece uniforme al hacer zoom out*/
-  height: 150vh;
-  background-color:  #f7f9fb;
-  margin: 100px auto 60px auto; /
-}
-
-.js_info{
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  padding: 15px;
-}
-
-.js_info h2{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  margin: 5px auto 5px;
-}
-
-.js_info img{
-  margin: 5px;
-  width: 700px;
-  height: 300px;
-  grid-column: 1;
-}
-
-.js_info p{
-  text-align: justify;
-  grid-column: 2;
-}
-
-/*================================================================================================================================
-PHP
-*/
-.php_main{
-  width: 172vh; /*Area visible del navegador. Area permanece uniforme al hacer zoom out*/
-  height: 150vh;
-  background-color:  #f7f9fb;
-  margin: 100px auto 60px auto; /
-}
-
-.php_info{
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  padding: 15px;
-}
-
-.php_info h2{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  margin: 5px auto 5px;
-}
-
-.php_info img{
-  margin: 5px;
-  width: 700px;
-  height: 300px;
-  grid-column: 1;
-}
-
-.php_info p{
-  text-align: justify;
-  grid-column: 2;
-}
-
-
-/*================================================================================================================================
-PYTHON
-*/
-.python_main{
-  width: 172vh; /*Area visible del navegador. Area permanece uniforme al hacer zoom out*/
-  height: 150vh;
-  background-color:  #f7f9fb;
-  margin: 100px auto 60px auto; /
-}
-
-.python_info{
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  padding: 15px;
-}
-
-.python_info h2{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  margin: 5px auto 5px;
-}
-
-.python_info img{
-  margin: 5px;
-  width: 700px;
-  height: 300px;
-  grid-column: 1;
-}
-
-.python_info p{
-  text-align: justify;
-  grid-column: 2;
-}
 
 /*================================================================================================================================
 LOGROS*/
 .main_logros{
   width: 172vh; /*Area visible del navegador. Area permanece uniforme al hacer zoom out*/
-  height: 272vh;
+  height: 360vh;
   margin: 114px auto 60px auto; /*Orden de aplicacion de este margin: arriba, derecha, abajo, izquierda*/
   background-color:  #f7f9fb;
 }
 
-.main_logros h1{
+.l_intro{
   padding: 50px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background-color: #edf5f9;
+}
+
+.l_intro p{
+  margin-top: 10px;
+  font-size: 18px;
 }
 
 .main_logros p{/*Manejo todos los parrafos dentro de este main*/
@@ -717,25 +519,20 @@ LOGROS*/
   margin-top: 10px;
 }
 
-.k_logro img{
-  height: 99%;
-  width: 95%;
+.lg_figure{
   grid-column: 1;
+  height: 390px;
+  width: 524px;
 }
 
 .k_descripcion{
   grid-column: 2;
 }
 
-
-
-.lg_figure{
-  height: 390px;
-  width: 380px;
-}
-
 .lg_figure img{
-  margin: 10px;
+  margin-top: 68px;
+  height: 100%;
+  width: 100%;
 }
 
 .lg_figure img.active, .lg_figure img:hover{
@@ -743,11 +540,40 @@ LOGROS*/
   transition: .8s;
 }
 
+/*================================================================================================================================
+ Publicaciones*/
 
+.p_main{
+  display: grid;
+  width: 172vh; /*Area visible del navegador. Area permanece uniforme al hacer zoom out*/
+  height: 80vh;
+  background-color:  #f7f9fb;
+  margin: 114px auto 60px auto; /*Orden de aplicacion de este margin: arriba, derecha, abajo, izquierda*/
+  /*margin: 65px auto;*/
+}
 
+.img_post{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 15px;
+}
 
+.img_post h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 5px auto 5px;
+}
 
+.img_post img{
+  margin: 5px;
+  width: 700px;
+  height: 300px;
+  grid-column: 1;
+}
 
+.img_post p{
+  text-align: justify;
+  grid-column: 2;
+}
 /*================================================================================================================================
 CONTACTO*/
 .main_contacto{
