@@ -290,29 +290,10 @@ Body*/
     background-position: center center;
 }
 
-
-[data-animation = "show"]{
-  opacity: 0;
-  transform: scale(0);
-  transition: .1s ease-in .01s;
-
-  --opacity: 1;
-  --transform: scale(1);
-}
-
-.unset {
-  opacity: var(--opacity);
-  transform: var(--transform);
-}
-
 .prof_figure{
   padding-top: 60px ;
   height: 20px;
   grid-column: 1;
-}
-
-.prof_figure img{
-  object-fit:unset;
 }
 
 .prof_figure img.active, .prof_figure img:hover{
