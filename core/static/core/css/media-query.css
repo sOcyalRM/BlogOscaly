@@ -85,6 +85,154 @@
         margin-bottom: 30px;
       }
 
+/* //////////////////////////////////// Media para Publicaciones ///////////////////////////////////*/
+      .p_main{
+        width: fit-content;
+        margin: 114px 10px;
+      }
+
+      .img_post{
+        width: fit-content;
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto;
+        margin: 0 auto;
+      }
+
+      .img_post h2{
+        grid-row: 1;
+        grid-column: 1;
+      }
+
+      
+      .img_post img{
+        grid-row: 2;
+        grid-column: 1;
+        margin: 0 auto;
+      }
+
+      .img_post p{
+        width: inherit;
+        grid-row: 3;
+        grid-column: 1;
+        padding: 12px;
+      }
+
+
+/* //////////////////////////////////// Media para Logros ///////////////////////////////////*/
+
+
+  .main_logros{
+    width: inherit;
+    height: fit-content;
+  }
+
+  .k_logro{
+    display: grid;
+    grid-template-rows:  2fr 3fr;
+    grid-template-columns: auto;
+    width: inherit;
+    height: fit-content;
+  }
+
+  .k_descripcion{
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+
+  .lg_figure{
+    grid-row: 2;
+    grid-column: 1;
+    width: inherit;
+  }
+
+  .lg_figure img{
+    width: fit-content;
+  }
+
+  .tienda{
+    margin: 60px;
+  }
+
+   /* //////////////////////////////////// Media para Contacto ///////////////////////////////////*/
+
+
+   .main_contacto{
+    width: inherit;
+  }
+
+  .sec_contacto{
+    padding: 10px 10px;
+  }
+  
+.bar_nombre{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    padding: 10px;
+  
+  }
+  
+  .bar_nombre h3{
+    margin: 5px;
+    grid-row: 1;
+  }
+  
+  .bar_nombre input{
+    font-size: 20px;
+    grid-row: 2;
+  }
+  
+  .bar_email {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    padding: 20px;
+  }
+  
+  .bar_email h3{
+    margin: 5px;
+    grid-row: 1;
+  }
+  
+  .bar_email input{
+    font-size: 20px;
+    grid-row: 2;
+  }
+  
+  .bar_mensaje{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    padding: 20px;
+  }
+  
+  .bar_mensaje h3{
+    margin: 5px;
+    grid-row: 1;
+  }
+  
+  .bar_mensaje textarea{
+    margin-top: 5px;
+    font-size: 20px;
+    height: 200px;
+    grid-row: 2;
+    
+  }
+
+    /* //////////////////////////////////// Media para Tienda ///////////////////////////////////*/
+
+    .m_tienda {
+        width: fit-content;
+        height: 84vh;
+    
+      }
+    
+      .m_tienda img{
+        width: 90%;
+      }
+
 
 }
 
@@ -180,11 +328,11 @@
     }
 
     .footerPie{
-        width: 940px;
+        width: 100%;
     }
 
     .social-icons {
-        width: 600px;
+        width: 512px;
     }
 
     .footerPie i{
@@ -216,7 +364,10 @@
         margin: 10px 20px 20px 10px;
       }
 
-
+    .sec_conocimientos{
+        width: fit-content;
+    }
+    
 }
 
 
@@ -232,12 +383,13 @@
      }
  
      .header{
-         width: 100%;
-         height: 62px
+         width: inherit;
+         height: 64px
      }
  
      .header_menu{
-         width: 100%;
+         width: 90%;
+         margin: 2px;
      }
  
      .menu{
@@ -259,19 +411,19 @@
      .icon_search{
         position: fixed;
         font-size: 24px;
-        margin: 5px 0 0 95%;
+        margin: 5px 0 0 93%;
     }
 
     .checkbtn{
         position: fixed;
-        width: 80px;
-        height: 60px;
+        width: 60px;
+        height: 50px;
         font-size: 30px;
-        margin: 5px 0 0 98%;
+        margin: 5px 0 0 96%;
     }
 
      .main-home{
-        height: 1200px;
+        height: fit-content;
      }
 
      .footerPie{
@@ -283,16 +435,14 @@
      
      .footerPie H4{
         font-size: 20px;
-     }
-
-     .social-icons{
-        width: 492px;
-        margin: 0 auto;
+        padding: 2px;
      }
 
      .social-icons a{
+        width: inherit;
         display: flex;
         font-size: 22px;
+        padding: 15px;
         justify-content: space-between;
      }
 
@@ -302,13 +452,13 @@
     }
 
     .perfil_intro{
-        width: 600px;
+        width: fit-content;
         padding: 10px 10px 15px; 
         margin: 0 auto;
     }
 
     .sec_conocimientos{
-        width: 740px;
+        width: fit-content;
         margin-top: 65px;
         margin: 65px auto;
       }
@@ -316,27 +466,96 @@
     .leng_detalles{ /*Revisar cuidadosamente*/
         display: inline-block;
         padding: 10px;
-        max-width: 42%; /*Establece el tamaño de este segmento como un 25% del tamaño del elemento padre*/
+        max-width: 70%; /*Establece el tamaño de este segmento como un 25% del tamaño del elemento padre*/
         margin-bottom: 10px;
     }
 
     .footerPie{
         margin-top: 20px;
-        width: 792px;
+        width: inherit;
     }
 
+      
+/*///////////////////////////// Media para Publicaciones //////////////////////////////*/
+      .p_main{
+        width: fit-content;
+        height: 112vh;
+        margin: 114px 10px;
+      }
+
+      .img_post{
+        width: inherit;
+        margin: 0 auto;
+      }
+
+      .img_post img{
+        width: 90%;
+      }
+
+      .img_post p{
+        width: inherit;
+      }
+
+    /*///////////////////////////// Media para Logros //////////////////////////////*/
+
+    .main_logros{
+        width: inherit;
+      }
+    
+      .k_logro{
+        width: fit-content;
+      }
+    
+      .lg_figure img{
+        width: 520px;
+      }
+
+      .lg_figure p{
+        width: fit-content;
+      }
+
+
 }
+
+
+@media screen and (max-width: 568px){
+    .main_logros{
+    width: 95%;
+    height: fit-content;
+    }
+
+    
+  .home_icon img{
+    width: 124px;
+    height: 36px;
+  }
+
+  .header{
+    height: 56px;
+  }
+
+  .lg_figure img{
+    width: 90%;
+    height: 80%;
+  }
+
+
+  .social-icons{
+    width: fit-content;
+}
+
+}
+
 
 
 @media screen and (max-width: 412px){
 
     .home-body{
-        height: max-content;
+        height: inherit;
     }
 
     .perfil_main{
         width: fit-content;
-
     }
 
     .perfil_intro{
@@ -358,18 +577,24 @@
 }
 
     .footerPie{
-        width: 100%;
+        width: inherit;
     }
 
     .social-icons{
-        width: 100%;
+        width: 90%;
     }
+
+    .social-icons a{
+        width: 10px;
+        margin: 5px;
+    }
+
 
 /* //////////////////////////////////// Media para los perfiles lenguajes ///////////////////////////////////*/
 
 .p_main{
     height: fit-content;
-    width: 412px;
+    width: fit-content;
   }
   
   .img_post{
@@ -403,9 +628,14 @@
 
 
 
+
   .home_icon img{
-    width: 108px;
-    height: 32px;
+    width: 124px;
+    height: 36px;
+  }
+
+  .header{
+    height: 56px;
   }
 
 
@@ -460,30 +690,22 @@
   .sec_contacto{
     padding: 10px 10px;
   }
-
-  .sec_contacto h1{
-    width: 400px;
-    margin: 0 auto;
-  }
-
-  .sec_contacto form{
-    width: 400px;
-  }
   
 .bar_nombre{
-    width: inherit;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
-    padding: 20px;
+    padding: 10px;
   
   }
   
   .bar_nombre h3{
+    margin: 5px;
     grid-row: 1;
   }
   
   .bar_nombre input{
+    font-size: 20px;
     grid-row: 2;
   }
   
@@ -495,10 +717,12 @@
   }
   
   .bar_email h3{
+    margin: 5px;
     grid-row: 1;
   }
   
   .bar_email input{
+    font-size: 20px;
     grid-row: 2;
   }
   
@@ -510,12 +734,16 @@
   }
   
   .bar_mensaje h3{
+    margin: 5px;
     grid-row: 1;
   }
   
   .bar_mensaje textarea{
+    margin-top: 5px;
+    font-size: 20px;
+    height: 200px;
     grid-row: 2;
-    height: 120px;
+    
   }
 
 }

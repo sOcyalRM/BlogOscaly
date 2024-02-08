@@ -465,8 +465,8 @@ PERFIL*/
 LOGROS*/
 .main_logros{
   width: 172vh; /*Area visible del navegador. Area permanece uniforme al hacer zoom out*/
-  height: 360vh;
-  margin: 114px auto 60px auto; /*Orden de aplicacion de este margin: arriba, derecha, abajo, izquierda*/
+  height: fit-content;
+  margin: 114px auto 60px auto; 
   background-color:  #f7f9fb;
 }
 
@@ -519,6 +519,10 @@ LOGROS*/
 .lg_figure img.active, .lg_figure img:hover{
   padding: 5px;
   transition: .8s;
+}
+
+.tienda{
+  margin: 20px;
 }
 
 /*================================================================================================================================
@@ -628,18 +632,33 @@ CONTACTO*/
 
 .btn_enviar{
   font-size: 21px;
-  background-color: #a4d0e2;
-  border-radius: 13%;
-  width: 120px;
+  background-color: #edf0f1;
+  border-radius: 10%;
+  width: 160px;
   height: 42px;
+  transform: translateY(3px);
 
 }
+
+.btn_enviar:hover {
+  cursor:pointer;
+}
+
+.btn_enviar:active {
+  background-color: #7a7272;
+  padding: 5px;
+}
+
+
+
+
 
 /*================================================================================================================================*/
 
 /*Tienda */
 .m_tienda{
   margin: 80px auto 50px auto;
+  height: fit-content;
 }
 
 /*
