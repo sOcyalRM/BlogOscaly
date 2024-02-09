@@ -76,3 +76,11 @@ function buscador_interno(){
         }
     }
 }
+
+
+const openModal = document.querySelector('.btn_modal');
+
+openModal.addEventListener('click', () =>{
+    alert('Has hecho click')
+});
+ 
