@@ -1,4 +1,4 @@
-
+//////////////// Codigo para funcionalidad de buscador///////////////////////
 //Ejecutando funciones
 document.getElementById("icon-search").addEventListener("click", mostrar_buscador);
 document.getElementById("cover-ctn-search").addEventListener("click", ocultar_buscador);
