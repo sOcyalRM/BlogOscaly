@@ -11,16 +11,6 @@ document.addEventListener("keydown", function(event) {
     }
   });
 
-  /*Ocultar con segundo clic*/
-/*document.addEventListener("keydown", function(event) {
-    if (event.key === "click") {
-      document.getElementById("icon-search").classList.toggle(ocultar_buscador());
-    }
-  });*/
-
-
-                        //Buscador de contenido
-
 //Declarando variables
 
 bars_search = document.getElementById("ctn-bars-search");       //Variable con la que se recibe la barra de busqueda como un todo
@@ -78,9 +68,34 @@ function buscador_interno(){
 }
 
 
-const openModal = document.querySelector('.btn_modal');
+///////////////////////////////////Section para manejar Ventana Modal//////////////////////////////
 
-openModal.addEventListener('click', () =>{
-    alert('Has hecho click')
+const openModal = document.querySelector('.btn_modal');
+const modal = document.querySelector('.modal')
+const closeModal = document.querySelector('.modal_close')
+document.getElementById("cover_modal").addEventListener("click", escape_modal);
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        modal.classList.remove('modal--show');
+    }
+  });
+
+
+openModal.addEventListener('click', (e) =>{
+    e.preventDefault();
+    modal.classList.add('modal--show');
 });
  
+closeModal.addEventListener('click', (e) =>{
+    e.preventDefault();
+    modal.classList.remove('modal--show');
+});
+
+
+//Funcion para ocultar modal
+function escape_modal(){
+    modal.classList.remove('modal--show');
+}
+
+

@@ -7,11 +7,15 @@
         <div class="div-descr">
             <h1>Panorama general</h1>
         </div>
+
+
         
         <section>
             <div class="item-1">
                 <figure class="prof_figure">
-                <img src="{% static 'core/img/profile-pic.jpeg' %} " width="200" height="300" alt="perfil" data-animation = "show"> <!-- Investigar como hacer que esta imagen permanezca de su tamaño al alejar la pantalla-->
+                <a href="#" class="btn_modal">
+                    <img src="{% static 'core/img/profile-pic.jpeg' %} " width="200" height="300" alt="perfil" data-animation = "show"> <!-- Investigar como hacer que esta imagen permanezca de su tamaño al alejar la pantalla-->
+                </a>
                 </figure>
                 <div>
                     <p class="parrafo">
@@ -36,6 +40,12 @@
             </div>
          
         
+        </section>
+
+        <section class="modal" id="cover_modal">
+            <div class="modal_container">
+                <img src="{% static 'core/img/profile-pic.jpeg' %}" class="modal_img">
+            </div>
         </section>
    
     </main>

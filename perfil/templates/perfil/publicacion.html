@@ -2,14 +2,16 @@
 {% load static %}
 
 {% block title %} Publicaciones {% endblock %}
-
+    {% block search %} {% endblock %}
 
     {% block content %}  
     <main class="p_main">
             <div class="img_post">
                 <h2>{{ profile.title }}</h2>
+                <a href="{{ profile.image.url }}" target="_blank">
                 <img src="{{ profile.image.url }}" alt="Imagen de codigo" >
-                {{ profile.content|safe }} <!--Revisar atributos de p en css-->
+                </a>
+                {{ profile.content|safe }} 
             </div>
 
             

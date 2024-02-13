@@ -3,6 +3,7 @@ from ckeditor.fields import RichTextField
 
 # Create your models here.
 class Achievements(models.Model):
+    #Crear nuevo id aqqui : ID = models.IDField(null = True, blank = True)
     title = models.CharField(max_length = 200, verbose_name = 'Titulo')
     description = RichTextField(verbose_name = 'Descripcion')
     content = RichTextField(verbose_name = 'Contenido')

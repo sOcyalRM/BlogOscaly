@@ -17,7 +17,7 @@
         {% for logro in logros %}
         <div class="k_logro">
                 <figure class="lg_figure">
-                    <a href="#" class="btn_modal">
+                    <a href="{{ logro.image.url }}" class="btn_modal" target="_blank">
                     <img src="{{ logro.image.url }}" alt="Kentucky" >
                     </a>
                 </figure>
@@ -28,15 +28,14 @@
             </div>
         </div>
 
-        {% endfor %}
-
-        
-        <section class="modal">
+        <section class="modal" id="cover_modal">
             <div class="modal_container">
-                <img src="{% static 'core/img/mammoth_cave.jpg' %}" class="modal_img">
-                <a href="#" class="modal_close"> X </a>
+                <!--<a href="#" class="modal_close"> X </a>-->
+                <img src="{{ logro.image.url }}" class="modal_img">
             </div>
         </section>
+        {% endfor %}
+
 
         <div class = "tienda">
             <h3>
