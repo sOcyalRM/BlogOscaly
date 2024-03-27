@@ -87,10 +87,19 @@
             </div>
             <p>Author: Oscaly Rosario</p>
             <p><a href="mailto:oscaly@hotmail.com">oscaly@hotmail.com</a></p>
-            <p>©Todos los derechos reservados 2024</p>
+            <p> Todos los derechos reservados &copy; 2023 - <span id = "crntYr"> </span> </p>
       </footer>
-      <script src="{% static 'core/js/menu.js' %}"></script>
-      <script src="{% static 'core/js/main.js' %}"></script>
+       <!-- El siguiente escript genera el año actual para copy right (NO funciona en si es agregado a main.js)-->
+            <script>
+                var fecha = new Date();
+                var anio = fecha.getFullYear();
+                document.getElementById('crntYr').innerHTML = anio;
+            </script>
+        <!--Fin de script -->
+
+        <script src="{% static 'core/js/menu.js' %}"></script>
+        <script src="{% static 'core/js/main.js' %}"></script>
+
 </body>
 
 </html>

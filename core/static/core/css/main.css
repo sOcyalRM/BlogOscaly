@@ -641,11 +641,10 @@ CONTACTO*/
 .btn_enviar{
   font-size: 21px;
   background-color: #edf0f1;
-  border-radius: 10%;
-  width: 160px;
+  border-radius: 6%;
+  width: 146px;
   height: 42px;
   transform: translateY(3px);
-
 }
 
 .btn_enviar:hover {
